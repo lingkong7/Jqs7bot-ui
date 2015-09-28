@@ -1,4 +1,6 @@
 example/
 test/
-assets/lib
 .idea/
+vendor/
+bower_components/
+data-demo/

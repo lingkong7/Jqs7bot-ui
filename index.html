@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <link rel="Shortcut icon" href="https://www.codester.com/static/favicon.ico">
+    <link rel='stylesheet' type="text/css" href="vendor/bootstrap-3.0.1/css/bootstrap.min.css">
+    <link rel='stylesheet' type="text/css" href="vendor/semantic/css/semantic.min.css">
+    <title>Jqs7bot</title>
+    <script src="vendor/requirejs/require.js" data-main="assets/config"></script>
+</head>
+<body>
+
+<div class="frontpage-header" >
+    <div class="container">
+        <div class="row" >
+            <div class="col-md-8 col-md-offset-2 text-center">
+                <div class="padder-v">
+                    <h1 class="text-white m-t-lg m-b-lg h2 l-h-1x animated fadeInDown">群组娘第二舰队活动图</h1>
+                    <!-- search form -->
+                    <form id="search"  class=""  data-target=".navbar-collapse" role="search">
+                        <div class="form-group frontpage-search m-b-xxl ">
+                            <div class="input-group" align="center">
+                                <input type="text" name="term" ng-model="selected" class="form-control input-lg bg-light white-transparant-bg no-border  padder w-sm" placeholder="for example '@Jqs_7'">
+                                <span class="input-group-btn">
+                                        <button type="submit" class="btn btn-lg bg-light "><i id="us" class="glyphicon-search"></i></button>
+                                </span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12" ng-controller="lineController">
+                    <line-chart option="line1"></line-chart>
+                </div>
+                <div class="col-xs-12" ng-controller="pieController">
+                    <pie-chart option="pie1"></pie-chart>
+                </div>
+            </div>
+        </div>
+</div>
+
+
+</body>
+</html>
